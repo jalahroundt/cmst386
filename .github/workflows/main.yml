@@ -26,7 +26,7 @@ jobs:
 
        uses: azure/webapps-deploy@v1
 
-     - with:
+       with:
 
          app-name: 'CMST386-jroundtree7'
 
