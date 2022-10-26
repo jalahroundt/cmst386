@@ -26,21 +26,21 @@ jobs:
 
      steps:
 
-    - uses: actions/checkout@main
+     - uses: actions/checkout@main
 
-    - name: Deploy to Azure Web App
+     - name: Deploy to Azure Web App
 
-      uses: azure/webapps-deploy@v1
+       uses: azure/webapps-deploy@v1
 
-      with:
+       with:
 
-      #Change the app-name to match what was provided to you in the publish settings file, this is in a naming convention of 'COURSENAME-STUDENTUID'
+       #Change the app-name to match what was provided to you in the publish settings file, this is in a naming convention of 'COURSENAME-STUDENTUID'
 
-        app-name: 'CMST386-jroundtree7'
+         app-name: 'CMST386-jroundtree7'
 
-        slot-name: 'production'
+         slot-name: 'production'
 
-      #Change the publish profile to match what you named your secret setup in GitHub, Example shown below
+       #Change the publish profile to match what you named your secret setup in GitHub, Example shown below
 
-        publish-profile: ${{ secrets.AppServiceCMST386 }}
+         publish-profile: ${{ secrets.AppServiceCMST386 }}
 
