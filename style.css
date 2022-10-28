@@ -1,57 +1,141 @@
-/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6e6fa;
+  color: #5e00b1;
+  padding: 5%;
 }
 
-/* Text Styling */
-.subtitle-text {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0;
+h1 {
+  font-size: 2rem;
+  text-align: center;
 }
 
-#my-name {
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 0 auto;
+h2 {
+  font-size: 1.6rem;
 }
 
-#class-name {
-    font-size: 1.5rem;
-    margin: 0 auto;
+h4 {
+  font-weight: 100;
 }
 
-.menu-items {
-    font-size: 1.3rem;
+h5 {
+  font-weight: 100;
 }
 
+h6 {
+  font-weight: 100;
+  font-style: italic;
+}
 
-/* Menu Styling */
-.menu-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+header {
+  text-align: center;
+}
+
+header p {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+nav {
+  background-color: #b561ff;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+}
+
+nav form {
+    width: 100%;
+    margin: 0;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+  color: #5e00b1;
+}
+
+button:hover {
+  color: #ffffff;
+}
+
+.hover-btn:hover ~ .hide-btn{
+    display: block;
+}
+
+.hide-btn:hover {
+    display: block;
+}
+
+.hide-btn {
+    background-color: #923bdd;
+    display: none;
+    z-index: 1;
+}
+
+main {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+main ol {
+  margin: 20px 0 20px 80px;
+  padding: 0;
+}
+
+section {
+  padding: 20px 0;
+}
+
+code ul {
+  list-style-type: none;
+}
+
+#menu-container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10%;
+}
+
+#gallery-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+    min-width: 150px;
+    min-height: 200px;
     text-align: center;
-    min-height: 100vh;
 }
 
-/* List Styling */
-ul {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;   
+figure img:hover {
+    opacity: 0.5;
 }
 
-ul li {
-    padding: 10px;
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0.7rem;
+    font-style: italic;
 }
 
-ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    color: #b5b5b5;
+footer {
+  text-align: center;
+  margin: 40px;
 }
