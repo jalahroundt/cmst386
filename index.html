@@ -9,29 +9,30 @@
     <meta name="keywords" content="HTML, CSS, UMGC, CMST-386">
     <meta name="author" content="Jalah Roundtree">
     <link rel="stylesheet" href="style.css">
-    <title>CMST-386 Projects</title>
+    <script src="./function.js"></script>
+    <title>CMST &ndash; 386 Projects</title>
 </head>
 
 <body>
-
-    <section id="menu-container">
+    <header class="bg-white">
         <h1>Ja'lah Roundtree</h1>
-        <h2>CMST - 386 Principles of Web Design and Technology II</h2>
+        <h1>CMST 386 &ndash; Principles of Web Design and Technology II</h1>
+    </header>
 
-        <nav>
-            <form>
-                <button formaction="index.html">Home</button>
-                <button class="hover-btn" formaction="/project1/project1.html">Project 1</button>
-                <button class="hover-btn" formaction="/project2/Roundtree_WebsiteProposal_CMST386.pdf">Project 2</button>
-                <button formaction="#">Project 3</button>
-                <button formaction="#">Project 4</button>
-                <div class="hide-btn">
-                    <button formaction="/project1/gallery.html">Gallery</button>
-                </div>
-            </form>
-        </nav>
+    <nav class="align-center">
+        <button onclick="toggleMenu()">Menu</button>
+        <form id="nav-links">
+            <button formaction="#">Home</button>
+            <button class="hover-btn" formaction="../project1/project1.html">Project 1</button>
+            <div class="hide-btn">
+                <button formaction="/project1/gallery.html">Gallery</button>
+            </div>
+            <button formaction="./project2/Roundtree_WebsiteProposal_CMST386.pdf">Project 2</button>
+            <button formaction=" ../project3/project3.html">Project 3</button>
+            <button formaction="#">Project 4</button>
+        </form>
+    </nav>
 
-    </section>
     <footer>&copy; 2022 | Ja'lah Roundtree</footer>
 </body>
 
