@@ -2,16 +2,29 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url(../project3/Poppins-Light.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   background-color: #e6e6fa;
   color: #5e00b1;
-  padding: 5%;
+  margin: auto;
+  padding: 2%;
+}
+
+.bg-white {
+  background-color: white;
 }
 
 h1 {
   font-size: 2rem;
   text-align: center;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -33,6 +46,8 @@ h6 {
 
 header {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 header p {
@@ -42,20 +57,38 @@ header p {
 
 nav {
   background-color: #b561ff;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
   text-align: center;
 }
 
-nav form {
-    width: 100%;
-    margin: 0;
+#nav-links {
+  display: none;
+}
+
+form {
+  width: 100%;
+}
+
+form button {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-btn {
+  width: 100%;
+  padding: 20px;
 }
 
 button {
-  width: 100px;
-  height: 50px;
+  padding: 20px;
   border: none;
   background: none;
   font-size: 1.1rem;
@@ -64,20 +97,21 @@ button {
 
 button:hover {
   color: #ffffff;
+  cursor: pointer;
 }
 
-.hover-btn:hover ~ .hide-btn{
-    display: block;
+.hover-btn:hover ~ .hide-btn {
+  display: block;
 }
 
 .hide-btn:hover {
-    display: block;
+  display: block;
 }
 
 .hide-btn {
-    background-color: #923bdd;
-    display: none;
-    z-index: 1;
+  background-color: #923bdd;
+  display: none;
+  z-index: 1;
 }
 
 main {
@@ -98,15 +132,9 @@ code ul {
   list-style-type: none;
 }
 
-#menu-container {
-  height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.main-container {
   text-align: center;
-  background-color: #ffffff;
-  padding: 10%;
+  background-color: white;
 }
 
 #gallery-container {
@@ -115,27 +143,109 @@ code ul {
 }
 
 figure {
-    margin: 0;
-    position: relative;
-    min-width: 150px;
-    min-height: 200px;
-    text-align: center;
+  margin: 0;
+  position: relative;
+  min-width: 150px;
+  min-height: 200px;
+  text-align: center;
 }
 
 figure img:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 0.7rem;
-    font-style: italic;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.7rem;
+  font-style: italic;
 }
 
 footer {
   text-align: center;
   margin: 40px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+
+.center-grid {
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.redirect-btn {
+  width: 50%;
+  background-image: linear-gradient(to bottom right, #b561ff, #5e00b1);
+  border: 2px solid #5e00b1;
+  border-radius: 500px;
+  filter: drop-shadow(7px 5px 4px #b4a9bd);
+}
+
+.redirect-btn {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  list-style-type: none;
+  color: #b561ff;
+}
+
+.breadcrumbs li {
+  margin: 0 5px 0 0;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    text-align: center;
+  }
+
+  .two-column {
+    display: block;
+  }
+
+  .two-column h3 {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .two-column {
+    display: block;
+  }
+
+  .redirect-btn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .two-column {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    margin: auto 5%;
+  }
 }
