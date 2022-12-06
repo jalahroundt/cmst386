@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UMGC CMST-386">
+    <meta name="keywords" content="HTML, CSS, UMGC, CMST-386">
+    <meta name="author" content="Jalah Roundtree">
+    <!-- <link rel="stylesheet" href="../project3/sassInput.css"> -->
+    <!--How I implemented SASS: I used Microsoft Visual Studio Code to compile my SASS file. 
+    SASS has been installed on my computer for a while by installing it using the NPM. I 
+    also installed the Line Sass Compiler extension to make it easier to set up the various 
+    files. I began by creating a new file named “sassInput.scss” after creating this file, 
+    the “Watch Sass” button appears on the bottom navigation panel. I click the “Watch Sass”
+     button and it creates the css file and the css.map file. After this, all that’s left 
+     to do is link the css file stylesheet to the page a wish to style.-->
+    <link rel="stylesheet" href="../style.css">
+    <script src="../function.js"></script>
+    <title>Project 3</title>
+</head>
+
+<body>
+    <header>
+        <h1>Project 3</h1>
+    </header>
+
+    <nav class="align-right">
+        <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+        <form id="nav-links">
+            <button formaction="../index.html">Home</button>
+            <button class="hover-btn" formaction="../project1/project1.html">Project 1</button>
+            <div class="hide-btn">
+                <button formaction="/project1/gallery.html">Gallery</button>
+            </div>
+            <button formaction="../project2/Roundtree_WebsiteProposal_CMST386.pdf">Project 2</button>
+            <button formaction="#">Project 3</button>
+            <button formaction="#">Project 4</button>
+        </form>
+    </nav>
+
+    <main>
+
+        <article class="two-column">
+        <h2 class="center-grid">Responsive Web Design & Google Analytics</h2>
+            <section>
+                <h3>Explain the importance of responsive design and its impact on the target audience. &#40;minimum 50
+                    words&#41;.</h3>
+                <p>Responsive Web Design allows webpages to be viewed without issues on all devices and platforms.
+                    Developers are able to use HTML and CSS to resize a webpage. They can also hide certain components.
+                    Without responsive web design you will experience layout cutoff's inconsistent sizing, and more.
+                    Webpages that are responsive gives users the freedom of viewing webpages from anywhere without
+                    visibility and accessibility issues.</p>
+            </section>
+            <section>
+                <h3>Google Analytics provides a wealth of data for free to help assess the success of websites. Describe
+                    three different kinds of reports that will tell you what information your target audience is
+                    accessing &#40;minimum 100 words&#41;.</h3>
+                <h4>Site Speed Overview Report</h4>
+                <p>The Site Speed Overview Report tells you which webpages have a long load time, and why. Webpages that
+                    load are least likely to be viewed repeatedly. Slow loading pages also decrease the engagement of
+                    the specific page. </p>
+                <h4>Navigation Summary</h4>
+                <p>The Navigation Summary Report allows developers to see what navigation path user take when viewing
+                    the site. The reports allow developers to see where users come from, how they get through your site,
+                    and where they are going afterwards.</p>
+                <h4>Mobile Overview Summary</h4>
+                <p>The Mobile Overview Report helps developers locate where the “un-mobile friendly” sections are in
+                    their site. The pages that are not mobile friendly will decrease engagement and viewership of the
+                    site. </p>
+            </section>
+            <form>
+                <button class="redirect-btn" formaction="../project3/preprocessing.html" >Learn Preprocessing</button>
+            </form>            
+        </article>
+
+    </main>
+</body>
+
+</html>

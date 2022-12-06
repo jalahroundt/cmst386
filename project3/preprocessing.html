@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UMGC CMST-386">
+    <meta name="keywords" content="HTML, CSS, UMGC, CMST-386">
+    <meta name="author" content="Jalah Roundtree">
+    <!-- <link rel="stylesheet" href="../project3/sassInput.css"> -->
+    <!--How I implemented SASS: I used Microsoft Visual Studio Code to compile my SASS file. 
+    SASS has been installed on my computer for a while by installing it using the NPM. I 
+    also installed the Line Sass Compiler extension to make it easier to set up the various 
+    files. I began by creating a new file named “sassInput.scss” after creating this file, 
+    the “Watch Sass” button appears on the bottom navigation panel. I click the “Watch Sass”
+     button and it creates the css file and the css.map file. After this, all that’s left 
+     to do is link the css file stylesheet to the page a wish to style.-->
+    <link rel="stylesheet" href="../style.css">
+    <script src="../function.js"></script>
+    <title>Project 3</title>
+</head>
+
+<body class="remove-margin">
+    <header>
+        <h1>Project 3 &ndash; Preprocessing </h1>
+    </header>
+
+    <nav class="align-right" id="nav">
+        <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+        <form id="nav-links">
+            <button formaction="../index.html">Home</button>
+            <button class="hover-btn" formaction="../project1/project1.html">Project 1</button>
+            <div class="hide-btn">
+                <button formaction="/project1/gallery.html">Gallery</button>
+            </div>
+            <button formaction="../project2/Roundtree_WebsiteProposal_CMST386.pdf">Project 2</button>
+            <button formaction=" ../project3/project3.html">Project 3</button>
+            <button formaction="#">Project 4</button>
+        </form>
+    </nav>
+
+    <main>
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="../project3/project3.html">Project 3</a></li>
+                <li>&gt;</li>
+                <li>Learn Preprocessing</li>
+            </ul>
+        </div>
+
+        <article class="two-column">
+            <h2 class="center-grid">Preprocessing</h2>
+            <section>
+                <h3>Explain the ways to implement preprocessing (client-side vs server-side) (minimum 50 words).
+                </h3>
+                <p>Less and Sass are both CSS preprocessors. A CSS preprocessor is a language that allows CSS to be
+                    compiled
+                    into regular CSS syntax so that it can be read by any browser that you’re using. These preprocessors
+                    can
+                    be implemented server-side by downloading or installing the resource by using Node.js then
+                    installing
+                    the preprocessor on the server using NPM in the command line. These preprocessors can be implemented
+                    client side by downloading the raw resource, transforming the raw data, then adding the result to
+                    the
+                    HTML DOM, instead of letting it render in the server.</p>
+            </section>
+            <section>
+                <h3>Define and describes the mechanisms used in either LESS or SASS: mixins, variables, functions,
+                    operators, nested variables (minimum 100 words)</h3>
+                <p>Sass allows you to use variables, nested rules, mixins and functions. Sass variable works like
+                    JavaScript
+                    variables. You give them a name starting in the “$” sign and assign it a value. Throughout your Sass
+                    file, you can refer to that variable by its name instead of defining the value over and over. Nested
+                    rules in Sass allows you to create rules inside one another, so you don’t have to write the same
+                    selector repeatedly. Mixins in Sass allow you to create reusable style throughout your sass file.
+                    And
+                    finally, Sass comes with built in modules that allow you to perform functions inside of your
+                    stylesheet.
+                    You can use the math function to operate on numbers or variables, and if-then functions to set
+                    conditions. </p>
+            </section>
+            <div>
+                <a href="#nav">Back to Top</a>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
