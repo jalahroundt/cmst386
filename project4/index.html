@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS< JavasScript, E-Commerce, Decorative, Pens, Pencils, Notebooks, Planners">
+    <meta name="description"
+        content="High Quality, Extremely Decorative, Efficient Pens, Stationary, and Notebooks. Free Shipping on $50+.">
+    <meta name="copyright" content="Love Notes and Pens LLC">
+    <meta name="author" content="Ja'lah Roundtree">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./slideshow.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eqv8ezl.css">
+    <script src="https://kit.fontawesome.com/00a507d6a4.js" crossorigin="anonymous"></script>
+    <script src="./js/function.js"></script>
+    <link rel="shortcut icon" href="./imgs/lnap.ico" type="image/x-icon">
+    <title>Love Notes and Pens</title>
+</head>
+
+<body onload="startTime(), showSlides(0)">
+    <!-- Footer clock starts on load of page -->
+
+    <header>
+        <i class="icon fa-solid fa-magnifying-glass fa-xl" onclick="showSearch()"></i>
+        <h1><a href="index.html">Love Notes and Pens</a></h1>
+        <div>
+            <i class="icon fa-solid fa-cart-shopping fa-xl"></i>
+            <i class="icon fa-solid fa-user fa-xl"></i>
+        </div>
+    </header>
+
+    <script async src="https://cse.google.com/cse.js?cx=b792af6bee3424787">
+    </script>
+    <div class="gcse-search" id="search-bar"></div>
+
+    <!-- Slideshow container -->
+    <div class="hero-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./imgs/spiral-notebook.jpg" alt="Spiral Notebook" style="width:100%">
+            <div class="text">Our pink spiral notebooke</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./imgs/pink-pencil.jpg" alt="Pens on a table" style="width:100%">
+            <div class="text">Our pinkest pencils</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./imgs/pens-on-tables.jpg" alt="Pens on a notebook" style="width:100%">
+            <div class="text">Our bestselling pens</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="mobile-menu-btn-container">
+        <button class="mobile-menu-btn" onclick="showNav()">Menu</button>
+    </div>
+
+    <nav id="nav-links">
+        <a href="#"><b>NEW!</b></a>
+        <a href="./item-pages/pens.html">Pens</a>
+        <a href="./item-pages/pencils.html">Pencils</a>
+        <a href="./item-pages/notebooks.html">Notebooks</a>
+        <a href="./item-pages/planners.html">Planners</a>
+        <a href="./item-pages/misc.html">Misc</a>
+        <a href="#">Clearance</a>
+    </nav>
+
+    <div class="two-column-container">
+        <a href="https://i0.hippopx.com/photos/820/795/735/italy-cinque-terre-store-front-awning-5bad4528de209488f7dc3f777069b311.jpg">
+        <img src="./imgs/italy-cinque-terre-store-front.jpg" alt="Italy storefront"></a>
+        <section>
+            <h2>Welcome!</h2>
+            <p>Welcome to Love Notes and Pens. We are a small stationary business based in Baltimore, Maryland. We
+                started our journey in 2016, selling decorative pens, notepads and notebooks in a pop-up shop at the
+                downtown harbor. Our shops gained a lot of sales and we we're able to create our online store front,
+                which is where you are now. We hope you find something you like, thank you for visiting!</p>
+            <p>-Love Notes and Pens</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; Love Notes and Pens LLC. | <a href="./privacy-policy.html">Privacy Policy</a> | <a
+                href="./contact-us.html">Contact Us </a></p>
+        <p>( Current Time: <span id="clock"></span>)</p>
+    </footer>
+</body>
+
+</html>
